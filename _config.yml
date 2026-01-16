@@ -1,0 +1,15 @@
+title: 我的技术博客
+description: 记录编程学习和开发经验
+baseurl: ""  # 保持为空
+url: "https://你的用户名.github.io"  # 你的GitHub Pages地址
+theme: minima  # 使用GitHub Pages默认主题
+
+# 个人信息
+author:
+  name: 你的名字
+  email: 你的邮箱
+  github: 你的GitHub用户名
+
+# 导航菜单
+header_pages:
+  - about.md
