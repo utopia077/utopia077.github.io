@@ -13,3 +13,4 @@ author:
 # 导航菜单
 header_pages:
   - about.md
+  - posts.md
