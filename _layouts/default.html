@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if page.title %}
+            {{ page.title }} | {{ site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin-right: 15px;
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .post-list article {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eaeaea;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <p>{{ site.description }}</p>
+        <nav>
+            <a href="{{ '/' | relative_url }}">首页</a>
+            <a href="{{ '/posts' | relative_url }}">所有文章</a>
+            <a href="{{ '/about' | relative_url }}">关于</a>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>© {{ site.time | date: '%Y' }} {{ site.author.name }}. 由 <a href="https://pages.github.com">GitHub Pages</a> 和 <a href="https://jekyllrb.com">Jekyll</a> 驱动.</p>
+        <p>最后更新: {{ site.time | date: "%Y年%m月%d日 %H:%M" }}</p>
+    </footer>
+</body>
+</html>
