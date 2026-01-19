@@ -1,7 +1,27 @@
+title: 我的技术博客
+description: 记录编程学习和开发经验
+baseurl: ""  # 保持为空
+url: "https://utopia077.github.io"  # 注意：你写的是 utopa077，应该是 utopia077？请检查
+theme: minima  # 使用GitHub Pages默认主题
+
+# 个人信息
+author:
+  name: 丁子琪
+  email: 1876167260@qq.com
+  github: utopia077
+
+# 导航菜单
+header_pages:
+  - about.md
+  - posts.md
+
+# 插件
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  defaults:
+
+# 默认值
+defaults:
   - scope:
       path: ""  # 所有文件
     values:
@@ -17,19 +37,3 @@ gems:
       type: "pages"
     values:
       layout: "page"
-title: 我的技术博客
-description: 记录编程学习和开发经验
-baseurl: ""  # 保持为空
-url: "https://utopa077.github.io"  # 你的GitHub Pages地址
-theme: minima  # 使用GitHub Pages默认主题
-
-# 个人信息
-author:
-  name: 丁子琪
-  email: 1876167260@qq.com
-  github: utopia077
-
-# 导航菜单
-header_pages:
-  - about.md
-  - posts.md
