@@ -1,3 +1,22 @@
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  defaults:
+  - scope:
+      path: ""  # 所有文件
+    values:
+      layout: "default"
+  - scope:
+      path: ""  # 所有文章
+      type: "posts"
+    values:
+      layout: "post"
+      author: "丁子琪"
+  - scope:
+      path: ""  # 所有页面
+      type: "pages"
+    values:
+      layout: "page"
 title: 我的技术博客
 description: 记录编程学习和开发经验
 baseurl: ""  # 保持为空
